@@ -80,7 +80,7 @@ pyenv --version
 # Output: pyenv 2.3.36
 ```
 
-Install Python 3.11: 
+Install Python 3.11.8: 
 ```shell
 pyenv install 3.11.8
 ```
@@ -111,7 +111,7 @@ poetry --version
 
 We use Poetry to install all the project's requirements to run it locally. Until deploying the code to AWS, we don't need to install any AWS dependencies. Also, we install Poe the Poet as a Poetry plugin to manage our CLI commands and pre-commit to verify our code before committing changes to git:
 ```shell
-poetry env use 3.11
+poetry env use 3.11.8
 poetry install --without aws
 poetry run pre-commit install
 ```
